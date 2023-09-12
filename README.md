@@ -21,7 +21,7 @@ We provide our prepared split of P1 and P2 datasets for both SNIPS and ATIS data
 
 
 ## Configuration
-Major important arguments are (configurable within the corresponding *run_model.sh* script):
+Major important arguments are (configurable within the corresponding *run_model.sh* script). We recommend users to tune hyperparameters before using due to the existent sensitivity to hardware architecture:
 
 * ```--ckpt_dir```: Saved directory for checkpoint
 * ```--epoch```: Number of training epochs
