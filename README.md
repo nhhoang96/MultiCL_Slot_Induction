@@ -3,7 +3,7 @@ This repository provides PyTorch implementation for the paper [*Slot Induction v
 
 
 ## Environment Setup
-The simples way to set up the environment is to run our prepared BASH script as follows (**NOTE:** Anaconda virtual environment needs to be pre-installed before the scripts)
+The simplest way to set up the environment is to run our prepared BASH script as follows (**NOTE:** Anaconda virtual environment needs to be pre-installed before the scripts)
 
 ```
 bash setup_env.sh
