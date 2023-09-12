@@ -1,5 +1,5 @@
 # Slot Induction via Pre-trained Language Model Probing and Multi-level Contrastive Learning
-This repository provides PyTorch implementation for the paper [*Slot Induction via Pre-trained Language Model Probing and Multi-level Contrastive Learning*](https://arxiv.org/pdf/2308.04712.pdf) **(SIGDIAL'2023)**
+This repository provides PyTorch implementation for the paper [*Slot Induction via Pre-trained Language Model Probing and Multi-level Contrastive Learning*](https://arxiv.org/pdf/2308.04712.pdf) **(SIGDIAL 2023)**
 
 
 ## Environment Setup
@@ -21,7 +21,7 @@ We provide our prepared split of P1 and P2 datasets for both SNIPS and ATIS data
 
 
 ## Configuration
--- Major important arguments are (configurable within the corresponding *run_model.sh* script:
+Major important arguments are (configurable within the corresponding *run_model.sh* script):
 
 * ```--ckpt_dir```: Saved directory for checkpoint
 * ```--epoch```: Number of training epochs
@@ -31,11 +31,11 @@ We provide our prepared split of P1 and P2 datasets for both SNIPS and ATIS data
 **Tuning hyperparameters**
 
 * ```seg_level```: Depth level of segmentation tree to extract semantic segments ($d$)
-* ```sent_temp```: SentCL temperature ($\tau_{d}$
-* ```seg_temp```: SegCL temperature ($\tau_{s}$
+* ```sent_temp```: SentCL temperature ($\tau_{d}$)
+* ```seg_temp```: SegCL temperature ($\tau_{s}$)
 
-* ```sent_coeff```: Coefficient for SentCL loss ($\tau_{s}$
-* ```seg_coeff```: Coefficient for SegCL loss ($\tau_{d}$
+* ```sent_coeff```: Coefficient for SentCL loss ($\gamma$)
+* ```seg_coeff```: Coefficient for SegCL loss ($\delta$)
 
 **Optional Configuration**
 * ```ratio_seg```: Ratio of segments for cropping (augmentations)
@@ -45,7 +45,7 @@ We provide our prepared split of P1 and P2 datasets for both SNIPS and ATIS data
 
 ## Running Experiments
 
-The following scripts are for Slot Induction training and evaluation (P1). 
+The following scripts are for Slot Induction training and evaluation (P1). </br>
 **SNIPS**
 ```
 cd ./code/script/trad/
@@ -70,5 +70,5 @@ If you find our ideas, code or dataset helpful, please consider citing our work 
 </pre>
 
 ## Acknowledgement
-Our UPL implementation is adapted from [Petrurbed Masking](https://github.com/LividWo/Perturbed-Masking).  </br>
-Our dataset is adapted from [Capsule-NLU](https://github.com/czhang99/Capsule-NLU). </br>
+Our UPL implementation is adapted from [Petrurbed Masking](https://github.com/LividWo/Perturbed-Masking)  </br>
+Our dataset is adapted from [Capsule-NLU](https://github.com/czhang99/Capsule-NLU) </br>

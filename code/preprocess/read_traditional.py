@@ -4,7 +4,7 @@ from transformers import BertTokenizer, BertModel, BertConfig
 import torch
 import pandas as pd
 
-from . import bert_segment, load_helper
+from . import bert_segment
 from utils import bert_segment_utils, utils
 import re
 import os
